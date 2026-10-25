@@ -1,0 +1,4 @@
+import React from "react";
+import "../styles/footer.css";
+import { WHATSAPP_NUMBER } from "../utils/config.js";
+export default function Footer() { return <footer className="footer"><div className="footer__top container"><div className="footer__identity"><img src="/mc-logo.jpeg" alt="Moumneh Center" /><p>Independent parts specialists.<br />BMW · Mercedes · Range Rover</p></div><div><p className="eyebrow">Contact</p><a className="footer__phone" href={`tel:+${WHATSAPP_NUMBER}`}>+961 70 740 676</a><a className="footer__message" href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer">Message on WhatsApp ↗</a></div><div><p className="eyebrow">Location</p><p>Beirut, Lebanon<br />Visit or contact us for a quote.</p></div></div><div className="footer__bottom container"><span>© {new Date().getFullYear()} Moumneh Center</span><span>OEM & premium automotive parts</span></div></footer>; }
